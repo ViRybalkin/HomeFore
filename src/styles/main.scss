@@ -5,3 +5,62 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+:root{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: $white;
+}
+
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-main{
+    background-image: url(..//img/image.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main{
+    padding-bottom: 150px;
+    &-text{
+    max-width: 830px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin: 0 auto;
+    &__title{
+        padding-bottom: 35px;
+    }
+    &__description{
+        line-height: 1.5;
+        margin: 0 auto;
+        color: $white;
+        font-weight: 500;
+        padding-bottom: 86px;
+        }
+    }
+}
+
+.btn{
+    margin-left: 5px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: $black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3.5rem;
+    background-color: $white;
+    text-align: center;
+    letter-spacing: 3px;
+}
