@@ -5,17 +5,22 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 172px;
+    
     &-item{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &:nth-child(1){
+            width: 880px;
+        }
     }
-}
+} 
 
 .logo{
+    margin-left: 11px;
     background-color: $black;
     padding: 2.3rem 1.7rem;
-    margin-right: 20px;
+    // margin-right: 158px;
     &__item{
         background-image: url(..//..//..//img/svg/HOMEFOR.svg);
         background-position: center center;
@@ -27,11 +32,54 @@
     }
 }
 
+.menu{
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    
+    &::before,
+    &::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        left: 0;
+        transition: 0.2s ease;
+        background-color: $white;
+        position: absolute;
+    }
+    &::before{
+        top: 0;
+    }
+    &::after{
+        bottom: 0;
+    }
+    span{
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        width: 80%;
+        top: 9px;
+        left: 0;
+        height: 1px;
+        transition: 0.2s ease;
+    }
+    &:hover{
+        &::after,
+        &::before,
+        span{
+            background-color: $light;
+        }
+    }
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
     &-item{
         list-style-type: none;
+        margin-right: 29px;
         &__link{
             text-decoration: none;
             color: $white;
@@ -45,7 +93,7 @@
 }
 
 .header-city{
-    margin-right: 100px;
+    margin-right: 104px;
     &__text{
         color: $white;
         position: relative;

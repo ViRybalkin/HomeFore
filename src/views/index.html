@@ -31,6 +31,7 @@
     <body>
         <section class="section-main">
             @@include("../blocks/modules/header/header.html")
+            
             <div class="wrapper">
                 <div class="main">
                     <div class="main-text">
@@ -38,15 +39,376 @@
                                  Жилой комплекс HOMEFOR  -  это жизнь с комфортом
                             </h1>
                             <p class="main-text__description">
-                                Мы охватываем все важные этапы проектирование и строительство<br>дома,а также повседневная эксплуатация после окончания.
+                                Мы охватываем все важные этапы проектирование и строительство<br>дома, а  также повседневная эксплуатация после окончания.
                             </p>
                         <a href="#" class="btn">подробнее</a>
                     </div>
                 </div>
             </div>
         </section>
-       
+       <section class="section-filters">
+           <div class="wrapper">
+            <div class="section-filters-item">
+                <a class="btn-filter" href="#"><span class="btn-filter__text">Тип объекта</span> </a>
+                <a class="btn-filter" href="#"><span class="btn-filter__text">Район</span></a>
+            </div>
+            <div class="filter-item">
+              <div class="section-filters-item">
+                <div class="filter-enter">
+                    <div class="filter-enter-text"> Площадь</div>
+                    <div class="filter-enter-data">
+                        <label>
+                            <input type="text"  class="filter-enter-data__input">
+                             <span class="filter-enter-data__text">м2</span>
+                    </div>
+                </div>
+              </div>
+              <div class="section-filters-item">
+                <div class="filter-enter">
+                    <div class="filter-enter-text">Цена за м2</div>
+                    <div class="filter-enter-data">
+                        <label>
+                            <input type="text"  class="filter-enter-data__input">
+                             тыс.
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="filter-slider">
+                    <div class="form-group">0
+                      <input type="range"  min="0" max="1000" step="1" id="fader" value="0"">
+                       1000
+                    </div>
+                    <div class="form-group">
+                      <input type="range" class="custom-range" min="50" max="5000" step="50" id="range" value="500"/>
+                    </div>  
+                  </div>
+                  <div class="filter-bottom">
+                    <a class="filter-bottom__link filter-bottom__reset btn" href="#">Сбросить фильтры</a>
+                    <a class="filter-bottom__link filter-bottom__show btn" href="#">показать</a>
+                </div>
+            </div>
+       </section>
+       <section class="section-catalog">
+           <div class="wrapper">
+               <h2 class="section-catalog__title">Загородные дома</h2>
+               <p class="section-catalog__description">Наши дома расположились в уютных районах Екатеринбурга:<br>
+                Верх-Исетский район, Железнодорожный район, Чкаловский район.</p>
+                <div class="catalog-item">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="..//img/image-2.png" alt="">
+                            <div  class="card-image-heart">
+                                <div class="card-image-heart__img"></div>
+                            </div>
+                            <div class="card-image-text">
+                                <h3 class="card-image-text__title">Дом   “Брусника”</h3>
+                                <p class="card-image-text__address">ул. Карла Маркса, 60, Екатеринбург</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <div class="card-description__area">
+                                    200 м2
+                                </div>
+                                <div class="card-description__areas">
+                                    10 сот
+                                </div>
+                                <div class="card-description__function">
+                                    с отдекой
+                                </div>
+                            </div>
+                            <div class="card-content-price">
+                                <h3>7 005 456 500 ₽</h3> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="..//img/trendis.png" alt="">
+                            <div  class="card-image-heart">
+                                <div class="card-image-heart__img"></div>
+                            </div>
+                            <div class="card-image-text">
+                                <h3 class="card-image-text__title">Дом  “Трендис”</h3>
+                                <p class="card-image-text__address">ул. Урицкого, 13, Екатеринбург</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <div class="card-description__area">
+                                    500 м2
+                                </div>
+                                <div class="card-description__areas">
+                                    12 сот
+                                </div>
+                                <div class="card-description__function">
+                                    с отдекой
+                                </div>
+                            </div>
+                            <div class="card-content-price">
+                                <h3>10 000 234 500 ₽</h3> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="..//img/ponorama.png" alt="">
+                            <div  class="card-image-heart">
+                                <div class="card-image-heart__img"></div>
+                            </div>
+                            <div class="card-image-text">
+                                <h3 class="card-image-text__title">Дома  “Панорома”</h3>
+                                <p class="card-image-text__address">ул. Толстого, 340, Екатеринбург</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <div class="card-description__area">
+                                    150 м2
+                                </div>
+                                <div class="card-description__areas">
+                                    13 сот
+                                </div>
+                                <div class="card-description__function">
+                                    с отдекой
+                                </div>
+                            </div>
+                            <div class="card-content-price">
+                                <h3>5 045 000 500 ₽</h3> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </section>
+       <section class="section-secondcatalog">
+           <div class="wrapper">
+                <h2 class="section-catalog__title">Городские квартиры</h2>
+                <p class="section-catalog__description">В каталоге квартир вы найдете актуальные планировки и цены.<br>Это те квартиры, которые есть в продаже сейчас.</p>
+                <div class="secondcatalog-item">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="..//img/Jukovka.png" alt="Дом  “Жуковка”">
+                            <div  class="card-image-heart">
+                                <div class="card-image-heart__img"></div>
+                            </div>
+                            <div class="card-image-text">
+                                <h3 class="card-image-text__title">Дом  “Жуковка”</h3>
+                                <p class="card-image-text__address">ул. Карла Маркса, 60, Екатеринбург</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <div class="card-description__area">
+                                    72 м2
+                                </div>
+                                <div class="card-description__function">
+                                    с отдекой
+                                </div>
+                            </div>
+                            <div class="card-content-price">
+                                <h3>3 006 435 500 ₽</h3> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="..//img/Parachute.png" alt="Дом  “Парашют”">
+                            <div  class="card-image-heart">
+                                <div class="card-image-heart__img"></div>
+                            </div>
+                            <div class="card-image-text">
+                                <h3 class="card-image-text__title">Дом  “Парашют”</h3>
+                                <p class="card-image-text__address">ул. Зорге, 160, Екатеринбург</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <div class="card-description__area">
+                                    112 м2
+                                </div>
+                                <div class="card-description__function">
+                                    с отдекой
+                                </div>
+                            </div>
+                            <div class="card-content-price">
+                                <h3>5 000 974 500 ₽</h3> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="..//img/Spring.png" alt="Дом  “Весна”">
+                            <div  class="card-image-heart">
+                                <div class="card-image-heart__img"></div>
+                            </div>
+                            <div class="card-image-text">
+                                <h3 class="card-image-text__title">Дом  “Весна”</h3>
+                                <p class="card-image-text__address">ул. Заречная, 120, Екатеринбург</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <div class="card-description__area">
+                                    100 м2
+                                </div>
+                                <div class="card-description__function">
+                                    с отдекой
+                                </div>
+                            </div>
+                            <div class="card-content-price">
+                                <h3>6 120 412 500 ₽</h3> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="..//img/Pioner.png" alt="Дом  “Пионер”">
+                            <div  class="card-image-heart">
+                                <div class="card-image-heart__img"></div>
+                            </div>
+                            <div class="card-image-text">
+                                <h3 class="card-image-text__title">Дом  “Пионер”</h3>
+                                <p class="card-image-text__address">ул. Карла Маркса, 120, Екатеринбург</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <div class="card-description__area">
+                                    90 м2
+                                </div>
+                                <div class="card-description__function">
+                                    с отдекой
+                                </div>
+                            </div>
+                            <div class="card-content-price">
+                                <h3>7 005 456 500 ₽</h3> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="..//img/Manhhatan.png" alt="Дом  “Манхетен”">
+                            <div  class="card-image-heart">
+                                <div class="card-image-heart__img"></div>
+                            </div>
+                            <div class="card-image-text">
+                                <h3 class="card-image-text__title">Дом  “Манхетен”</h3>
+                                <p class="card-image-text__address">ул. Карла Маркса, 60, Екатеринбург</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <div class="card-description__area">
+                                    87 м2
+                                </div>
+                                <div class="card-description__function">
+                                    с отдекой
+                                </div>
+                            </div>
+                            <div class="card-content-price">
+                                <h3>6 000 456 000 ₽</h3> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="..//img/friendship.png" alt="Дом  “Дружба”">
+                            <div  class="card-image-heart">
+                                <div class="card-image-heart__img"></div>
+                            </div>
+                            <div class="card-image-text">
+                                <h3 class="card-image-text__title">Дом  “Дружба”</h3>
+                                <p class="card-image-text__address">ул. Прашина, 60, Екатеринбург</p>
+                            </div>
+                            
+                        </div>
+                        <div class="card-content">
+                            <div class="card-description">
+                                <div class="card-description__area">
+                                    50 м2
+                                </div>
+                                <div class="card-description__function">
+                                    с отдекой
+                                </div>
+                            </div>
+                            <div class="card-content-price">
+                                <h3>4 012 400 500 ₽</h3> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-load">
+                    <button class="card-load__btn">Смотреть больше</button>
+                </div>
+           </div>
+       </section>
+       <section class="section-genplan">
+           <div class="wrapper">
+            <h2 class="section-genplan__title">Генплан</h2>
+            <p class="section-genplan__description">На генплане вы можете посмотреть территорию покупки. В поселке все предусмотрено.<br>Здесь проведены необходимые коммуникации.Это место влюбляет в себя.</p>
+            <div class="section-genplan-option">
+                <div class="genplan-option">
+                    <div class="genplan-option-item">
+                        <button type="button" class="genplan-option-item__title active">Загородные дома</button>
+                    </div>
+                    <div class="genplan-option-item">
+                        <button type="button"  class="genplan-option-item__title  ">Городские квартиры</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="section-genplan__img">
+           </div>
+       </section>
+       <section class="section-advantages">
+           <div class="wrapper">
+               <div class="about">
+                <h2 class="about__title">О компании</h2>
+                <p class="about__description">Профессиональный оператор рынка элитной недвижимости с 2008 года.<br>
+                 HOMEFOR – это сочетание репутации, многолетнего опыта и высокого уровня сервиса.<br> Компания заслужила доверие и признание профессиональных участников рынка 
+                 </p>
+               </div>
+              <ul class="section-advantages-list">
+                  <li class="section-advantages-item">
+                      <div class="section-advantages-item__img sketch"></div>
+                      <div class="section-advantages__text">Большой опыт<br>в строительстве</div>
+                  </li>
+                  <li class="section-advantages-item">
+                    <div class="section-advantages-item__img price"></div>
+                    <div class="section-advantages__text">Доступные цены</div>
+                  </li>
+                  <li class="section-advantages-item">
+                    <div class="section-advantages-item__img time"></div>
+                    <div class="section-advantages__text">Оперативные<br>сроки работы</div>
+                  </li>
+                  <li class="section-advantages-item">
+                    <div class="section-advantages-item__img quality"></div>
+                    <div class="section-advantages__text">Качественные<br>материалы</div>
+                  </li>
+              </ul>
+           </div>
+       </section>
         @@include("../blocks/modules/footer/footer.html")
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(function() {
+            var links = $('.genplan-option-item > .genplan-option-item__title');
+            links.on('click', function() {
+                links.removeClass('active').closest('.tab').removeClass('active');
+                $(this).addClass('active').closest('.tab').addClass('active');
+            })
+            .first().click();
+        });
+        </script>
+        <script src="..//js/index.js"></script>
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
     </body>
