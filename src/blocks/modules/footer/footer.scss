@@ -1,0 +1,150 @@
+footer{
+    border-top: 1px solid $black;
+    padding-top: 56px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+    &-item{
+        &:first-child{
+            padding-top: 10px;
+        }
+        &-nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 37px;
+            .logo{
+                margin: 0;
+                padding: 0;
+                background-color: transparent;
+                &__item{
+                    background-image: url(..//..//..//img/svg/logo.svg);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    display: block;
+                    background-size: cover;
+                    width: 145px;
+                    height: 23px;
+                }
+            }
+            .nav-item__link{
+                color: $black;
+            }
+        }
+        &-block{
+            display: flex;
+            flex-direction: column;
+            &__tel{
+                text-decoration: none;
+                font-size: 2.125rem;
+                color: $black;
+                letter-spacing: 2px;
+                font-weight: 500;
+                padding-bottom: 75px;
+            }
+            &-list{
+                display: flex;
+                justify-content: flex-end;
+                &-item{
+                    list-style-type: none;
+                    margin-right: 6px;
+                    margin-left: 23px;
+                
+                }
+            }
+        }
+    }
+}
+
+
+.list-item{
+    &__social{
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 50px;
+        height: 50px;
+        background-color: $black;
+        border-radius: 100%;
+        display: block;
+    }
+    &__vk{
+        background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAOCAYAAADE84fzAAABYElEQVQ4jaWUzStEYRTGfybGwleNkMhH1rNgzz9gaSNsRNkgZWFlNSss/AfYiLJUZKcslIWNhaWmkWRiYRRN8ejlvXnnzrlSnjp13+c895xzzzn3rZE0DLTyjTRwDVz5cx+wDWSBWs/lgWngkh9kgBEq8YCkgipRktQsyfmaJK2pGqveH9muoblPATuxjI3AjH8uATmqkQqYTmDM0Oy7rO2SXmNZbyWlg8reY/6lwLduVP0oqS311RvYimXtAhaC84tRmUMvMG/wi0Axyt4jqRzL/iypW1K9UdmyJLcMh4ZvL/qqcCibhvBC0pzBH0vaMPi8pBYreMb36j+YCrconPoTsJLQ279ioEIX21fXx5N/Vj9rtSWyDuPHsnCVwLu1HU8K7iwrqfhL4COvs4bq8CZpKCm4s35JZwkv54I2HiRozqPLyMKNv4xGgXFgEGgAPoDTaGTAJHAHTAB1ni8DhU+/Xg8xT1FO7wAAAABJRU5ErkJggg==");
+        background-size: 23px 14px;
+    }
+    &__insta{
+        background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABEUlEQVQ4ja2UQWrDMBBFn7owXRW6cKHQC+QEpeB1lyHX6AF6CF+guUbpLlllEUhzgvoGIcmuK1MIvyiMwmAUAo4HxhKj/79HI42QlLyUVEtqJLU6b61hauMc+SF+gGfgC3gAfoEfoCVvt8AIuAN2wBhYp0y2kg6S3iUVLstzXhj2YNwSS1G2cEkg+aukJ+NEq+PWGuARKIG/zjYq4MXmK2Bp8w/gE1gAe2CDFe+788d7SfNMuee25rGR22KARWcxicwkTcxnTsxjI1c5ocqJBBcPTqzqCt1kjjfVZArIxWUxjzlZTqiX5YRWNr4BwcWDxTzG5TtgsQc5/r4XMlnhL2SfFkl+apHBmnbQZ+T6h03iH713zuWSuHxoAAAAAElFTkSuQmCC");
+        background-size:18px 18px;
+    }
+    &__fb{
+        background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAAhElEQVQokeWQMQqDUBBEXyRg4RlSxTq1lVfyAF7Go1hZ6wVCCOmTMoIw8smXTBpN78DC7O5jWQZJXqWkTtJbH93CzoGLLeVQwlcVkFr/Ah7BHG14Nt8DBTCGxi+5hgVYg350kNTHQQ5k0T+Be/TXAGnjUL0FTcDJc2otn8ZD/uvxvUPADH2ic3hM15HMAAAAAElFTkSuQmCC");
+        background-size:9px 18px;
+    }
+}
+
+.footer-item-form{
+    &__text{
+        margin: 0;
+        padding-bottom: 14px;
+    }
+}
+
+.form{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 17px;
+    &__input{
+        padding: 1.35rem 20.325rem 1.25rem 1.8rem;
+        border: 1px solid $black;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__btn{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+    padding: 1.33rem 2.85rem;
+    background-color: $black;
+    text-align: center;
+    letter-spacing: 3px;
+    border : none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    &:hover{
+        color: $light;
+    }
+    }
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    &__copy{
+        margin: 0;
+        font-size: 0.75rem;
+        color:$black;
+        opacity: 0.5;
+    }
+    &__text{
+        margin: 0;
+        font-size: 0.75rem;
+        color:#acabac;
+    }
+    &__link{
+        opacity: 0.5;
+        text-decoration: none;
+        color:$black;
+        transition: 0.2s ease;
+        &:hover{
+            opacity: 1;
+        }
+
+    }
+}
