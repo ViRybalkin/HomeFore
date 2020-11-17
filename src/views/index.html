@@ -32,6 +32,18 @@
     <body>
         <section class="section-main">
             @@include("../blocks/modules/header/header.html")
+            <div class="secion-main-image">
+                <div class="block-image">
+                    <img src="..//img/image.png" alt="" class="lol">
+                </div>
+                <div class="block-image">
+                    <img src="..//img/image.png" alt="" class="lol">
+                </div>
+                <div class="block-image">
+                    <img src="..//img/image.png" alt="" class="lol">
+                </div>
+            </div>
+           
             <div class="wrapper">
                 <div class="main">
                     <div class="main-text">
@@ -539,6 +551,21 @@
             </div>
            </div>
            <div class="section-genplan__img">
+               <div class="house-23 house">
+                   <p class="genplan__number">Дом 23</p>
+               </div>
+               <div class="house-56 house">
+                <p class="genplan__number">Дом  56</p>
+                   <p class="genplan__text">Вы можете приобрести <br>10 567 457руб</p>
+               </div>
+               <div class="house-234 house">
+                   <p class="genplan__number">Дом 234</p>
+               </div>
+               <div class="house-116 house">
+                   <p class="genplan__number">Дом 116</p>
+               </div>
+               <div class="school-27 house">
+                <p class="genplan__number">школа №27</p></div>
            </div>
        </section>
        <section class="section-advantages">
@@ -721,6 +748,14 @@
   ]
 });
 </script>
+<script>
+    $('.secion-main-image').slick({
+        dots: true,
+        speed: 500,
+    });
+
+</script>
+        <script src="..//js/main.js"></script>
         <script src="js/index.js"></script>
         <script src="js/vendor.js"></script>
     </body>

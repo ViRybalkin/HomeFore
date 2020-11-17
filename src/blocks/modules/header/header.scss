@@ -1,10 +1,13 @@
 .header{
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 172px;
+    position: absolute;
+    z-index: 2;
+    left: 10%;
     &-item{
         display: flex;
         justify-content: space-between;
