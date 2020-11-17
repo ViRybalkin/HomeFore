@@ -89,16 +89,22 @@
               <div class="filter-slider">
                     <div class="form-group">
                         <p class="form-group__text">0</p>
-                        <div class="range-number"></div>
-                        <input type="range"  min="0" max="1000" value="0" class="range">
+                        <output  for="fader" class="range-number" id="volume">0</output>
+                        <input type="range"  min="0" max="1000" value="0" id="fader"  class="range" oninput="outputUpdate(value)">
                         <p class="form-group__text">1000</p>
                     </div>
                     <div class="form-group">
                         <p class="form-group__text">0</p>
+                        <output  for="fader" class="range-number" id="volume">0</output>
+                        <input type="range"  min="0" max="1000" value="0" id="fader"  class="range" oninput="outputUpdate(value)">
+                        <p class="form-group__text">98000</p>
+                    </div>
+                    <!-- <div class="form-group">
+                        <p class="form-group__text">0</p>
                         <div class="range-number"></div>
-                        <input type="range"  min="0" max="98000" value="0" class="range">
+                        <input type="range"  min="0" max="98000" value="0" class="range"  ">
                       <p class="form-group__text">98000</p>
-                    </div>  
+                    </div>   -->
                   </div>
                   <div class="filter-bottom">
                     <a class="filter-bottom__link filter-bottom__reset" href="#">Сбросить фильтры</a>
@@ -473,7 +479,7 @@
                                 </div>
                             </div>
                             <div class="card-content-price">
-                                <h3>7 005 456 500 ₽</h3> 
+                                <h3>3 120 000 500 ₽</h3> 
                             </div>
                         </div>
                     </div>
@@ -755,7 +761,13 @@
     });
 
 </script>
-        <script src="..//js/main.js"></script>
+<script>
+    function outputUpdate(vol){
+        let output = document.querySelector('#volume');
+        output.value = vol;
+        output.style.left = vol - 0 + 'px';
+    }
+</script>
         <script src="js/index.js"></script>
         <script src="js/vendor.js"></script>
     </body>
