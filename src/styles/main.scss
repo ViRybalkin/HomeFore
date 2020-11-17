@@ -303,18 +303,23 @@ h3{
      justify-content: space-between;
  }
 
+
  .card{
      border: 1px solid $black;
+     margin-right: 20px;
      &-image{
          position: relative;
+         &__img{
+             max-width: 458px;
+         }
          &-heart{
              width: 40px;
              height: 40px;
              background-color: $black;
              display: block;
              position: absolute;
-             bottom: 41px;
-             right: 43px;
+             bottom: 34px;
+            right: 24px;
              transition: 0.2s ease;
              cursor: pointer;
              &:hover{
@@ -375,7 +380,7 @@ h3{
             }
          }
          &__areas{
-            margin-right: 40px;
+            margin-right: 62px;
             position: relative;
             padding-top: 4px;
             &::before{
@@ -393,12 +398,15 @@ h3{
             }
          }
          &__function{
+            position: relative;
+            padding-top: 5px;
             &::before{
                 content: "";
                 background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABOklEQVQ4jZXTPUtcURDG8d+uW6iIBNHKJqQIgkTFTjuxEbER0qTzG6SwFQVJE6z8EolaCYKFpZ0ivjSKhSAoiBAEBWOR+MKBWVjXXe+9A6c4DzN/njlnpjT0ZVjEJBYVi3lspooKpvEJV4H4kRM1hw/VSwINYhSXoa0XAE1F/UYlxFZ0F2zrFp/jPJTxH+dYKQDpx3WtkBz9RBfGQtvLAdqO2legf0FfC62cARlBH3rqQdV4ytHeR0zgEaXQnnFTyShMkQbta0DusIBZnOAUB9jPA5qJ8UjxB7/wHbu1SVnvkUaio+5+UQ/JA1rGAM6wGtpho8Ss1pKbY/wNJ01BWY7a0IuWgF1Vl7QoKMU92tMa4KhZ0nugTuzECiVnyVHDtvI4Go8vT2cJW80S33vsNHxpbb7F/XdobwMv4z86+8tO70oAAAAASUVORK5CYII=");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
+                position: absolute;
                 width: 18px;
                 height: 18px;
                 display: inline-block;
@@ -483,6 +491,7 @@ h3{
      margin-right: 7px;
      .card{
          margin-bottom: 20px;
+         margin-right: 0;
      }
  }
 
